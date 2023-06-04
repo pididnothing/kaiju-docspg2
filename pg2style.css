@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    scroll-timeline-name: bodyline;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.flexitem {
+    width: 10%;
+    height: 60px;
+}
+
+#title {
+    width: 100%;
+    font-family: 'Raleway';
+    font-size: 100px;
+    font-weight: bolder;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+#title img {
+    height: 300px;
+}
+
+#titleitem {
+    position: relative;
+    z-index: 1;
+}
+
+#title img {
+    animation: rotation 8s linear 0s 1;
+}
+
+@keyframes rotation {
+
+    0% {
+        transform: translateX(1000%) rotate(780deg);
+    }
+
+    100% {
+        transform: translateX(0%) rotate(0deg);
+    }
+}
+
+#navigation {
+    position: sticky;
+    top: 0px;
+    align-self: baseline;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#home {
+    animation: bouncing 2s linear 0s 1;
+}
+
+#features {
+    animation: bouncing 3s linear 0s 1;
+}
+
+#prereg {
+    animation: bouncing 4s linear 0s 1;
+}
+
+#comms {
+    animation: bouncing 5s linear 0s 1;
+}
+
+
+@keyframes bouncing {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+
+#content {
+    display: flex;
+    background-color: rgb(20, 40, 70);
+    align-self: flex-end;
+    width: 100%;
+    height: fit-content;
+    min-height: 1500px;
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#about {
+    width: 80%;
+    border-radius: 3px;
+    padding: 2%;
+    background-color: rgb(194, 70, 25);
+}
+
+.listitem {
+    margin-left: 10%;
+}
+
+#sidel {
+    width: 10%;
+
+}
+
+#sider {
+    width: 10%;
+
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    font-size: 40px;
+    color: orangered;
+    padding-inline-start: 20px;
+
+}
+
+nav a:hover {
+    color: orange;
+}
+
+nav {
+    background-color: rgb(20, 40, 70);
+    overflow: hidden;
+    width: 100% !important;
+    height: 20 !important;
+    padding: 25px;
+    padding-bottom: 15px;
+    font-family: 'Oswald' !important;
+}
